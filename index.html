@@ -660,58 +660,62 @@ footer {
 /* ═══════════════════════════════════════════════════
    BANNER REDES SOCIALES
 ═══════════════════════════════════════════════════ */
+.redes-separador {
+  background: var(--blanco);
+  padding: 28px 0;
+}
 .redes-banner {
   background: var(--azul-suave);
-  padding: 20px 28px;
+  padding: 28px 28px 32px;
 }
 .redes-inner {
   max-width: var(--max);
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
-  flex-wrap: wrap;
+  gap: 18px;
 }
 .redes-label {
   font-family: var(--font-cuerpo);
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
   color: var(--azul);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
 .redes-links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
 }
 .red-link {
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 9px;
   text-decoration: none;
   color: var(--azul);
   font-family: var(--font-cuerpo);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   transition: color 0.2s, transform 0.15s;
 }
 .red-link:hover {
   color: var(--azul-medio);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 .red-link svg {
-  width: 22px;
-  height: 22px;
+  width: 28px;
+  height: 28px;
   flex-shrink: 0;
 }
 @media (max-width: 560px) {
-  .redes-inner { gap: 16px; }
-  .redes-label { width: 100%; text-align: center; }
-  .redes-links { justify-content: center; gap: 18px; }
-  .red-link span { display: none; }
-  .red-link svg { width: 26px; height: 26px; }
+  .redes-links { gap: 22px; }
+  .red-link svg { width: 30px; height: 30px; }
 }
 
 </style>
@@ -793,6 +797,7 @@ footer {
 
 
 <!-- ═══ REDES SOCIALES ══════════════════════════════ -->
+<div class="redes-separador"></div>
 <div class="redes-banner">
   <div class="redes-inner">
     <span class="redes-label">Síguenos</span>
